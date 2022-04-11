@@ -58,15 +58,13 @@ button {
   overflow: hidden;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .page {
@@ -171,7 +169,7 @@ button {
 }
 .hero {
   background-color: var(--primary-text-color);
-  padding-top: 195px;
+  padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
@@ -184,8 +182,10 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  min-width: 696px;
+  width: 696px;
   margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-button {
@@ -203,7 +203,7 @@ button {
   border-radius: 4px;
   padding: 10px 32px;
 }
-.features {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -230,13 +230,12 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 .features .list {
   padding: 0px;
 }
 .about-us {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 .about {
   margin-bottom: 50px;
@@ -252,8 +251,6 @@ button {
 
 .team-background {
   background-color: var(--secondary-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .about,
 .team {
@@ -306,7 +303,7 @@ button {
 }
 
 .button-items + .button-items {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 .button-list {
   margin-bottom: 50px;
@@ -321,7 +318,6 @@ button {
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
-  min-width: 128px;
   border-radius: 4px;
   padding: 6px 22px;
 }
@@ -347,7 +343,6 @@ button {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .projects-item {
   width: 370px;
@@ -393,12 +388,15 @@ footer {
 .footer-accent:focus {
   color: var(--primary-white-color);
 }
-.footer-items {
+.footer-items:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .footer-list {
   list-style: none;
   font-style: normal;
+}
+.footer-address {
   margin-top: 20px;
 }
 .infofooter-link:hover,
